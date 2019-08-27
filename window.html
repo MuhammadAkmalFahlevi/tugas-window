@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WINDOW</title>
+</head>
+<body>
+    <button onclick="KeluarkanAlert()">Keluarkan Alert</button>
+    <br>
+    <button onclick="KeluarkanConfirm()">Keluarkan Confirm</button>
+    <br>
+    <button onclick="KeluarkanPrompt()">KeluarkanPrompt</button>
+</body>
+<script>
+    function KeluarkanAlert(){
+        window.alert('Hacked by Anonymous !!! HAHA');
+    }
+    function KeluarkanConfirm(){
+        window.confirm('Ini adalah Confirm!!!');
+    }
+
+    document.write('<br>');
+    
+    const tinggi = prompt("masukan nilai");
+    document.write("terima kasih nilai kamu");
+    for (let baris = 0; baris < tinggi; baris++) {
+        document.writeln('&nbsp;'.repeat((tinggi-baris)+1) + '*'.repeat(1*baris) + '<br>')
+    }
+</script>
+</html>
